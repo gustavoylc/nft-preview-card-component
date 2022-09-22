@@ -1,0 +1,17 @@
+.card-content-creator-container{
+    display: flex;
+    align-items: center;
+    &__owner{
+        width: 100%;
+        margin-left: 15px;
+        color: $soft-blue;
+        font-weight: 300;
+        &__name{
+            color: $white;
+            text-decoration: none;
+            &:hover{
+                color: $cyan;
+            }
+        }
+    }
+}
