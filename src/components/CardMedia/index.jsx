@@ -3,8 +3,6 @@ import React from "react";
 export const CardMedia = ({
 	image,
 	alt,
-	height,
-	width,
 	viewImage,
 }) => {
 	return (
@@ -13,8 +11,6 @@ export const CardMedia = ({
 				className="card-media-container__image"				
 				src={image}
 				alt={alt}
-				height={height}
-				width={width}
 			/>			
 			<figure className="card-media-container__image-eye">
 				<img
