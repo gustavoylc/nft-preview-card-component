@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
+import { Nft } from "./pages/Nft";
 
 export const App = () => {
-  return (
-    <div>Holaaaaaaaaaaaaa</div>
-  )
-}
+	return <Nft />;
+};
