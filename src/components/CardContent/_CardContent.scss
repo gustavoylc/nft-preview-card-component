@@ -1,0 +1,55 @@
+.card-content-container {
+    &__title {
+        font-size: 1.4em;
+        font-weight: 600;
+        margin: 25px 0 15px 0;
+        &__nft-id {
+            color: $white;
+            text-decoration: none;
+            &:hover{
+                color: $cyan;
+            }
+        }
+    }
+    &__pricing {
+        margin: 12px 0;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        font-size: $sm;
+        font-weight: 400;
+        &__price-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $cyan;
+            &__eth-icon {
+                width: 12px;
+                height: 18px;
+                margin-right: 8px;
+            }
+        }
+        &__time-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $soft-blue;
+            font-weight: 300;
+            &__clock-icon {
+                width: 18px;
+                height: 18px;
+                margin-right: 8px;
+            }
+        }
+    }
+    &__description {
+        color: $soft-blue;
+        font-size: $md;
+        font-weight: 300;
+    }
+    &__line{
+        border-top: 1px solid $very-dark-blue-line;
+        margin-bottom: 15px;
+        opacity: 0.1;
+    }
+}
