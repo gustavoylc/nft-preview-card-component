@@ -1,28 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	margin: 0;
+    box-sizing: border-box;
+    margin: 0;
 }
 
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$very-dark-blue-main-bg: hsl(217, 54%, 11%);
+$very-dark-blue-card-bg: hsl(216, 50%, 16%);
+$very-dark-blue-line: hsl(215, 32%, 27%);
+$dark-blue: hsl(228, 45%, 44%);
+$white: hsl(0, 0%, 100%);
+$sm: 15px;
+$md: 16px;
+$lg: 18px;
+
 body {
-	min-height: 100vh;
-	line-height: 1.5;
+    min-height: 100vh;
+    min-width: 375px;
+    line-height: 1.5;
+    font-family: "Outfit", sans-serif;
+    background-color: $very-dark-blue-main-bg;
+    color: $white;   
 }
 
 /* Make images easier to work with */
 img,
 picture {
-	max-width: 100%;
-	display: block;
+    max-width: 100%;
+    display: block;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
-	list-style: none;
-}
-
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+    list-style: none;
 }
