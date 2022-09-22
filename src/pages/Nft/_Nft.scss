@@ -1,0 +1,15 @@
+.layout {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.footer {
+    &__attribution {
+        font-size: 11px;
+        text-align: center;
+        margin: 20px auto;
+        &__a {
+            color: $dark-blue;
+        }
+    }
+}
