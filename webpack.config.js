@@ -20,6 +20,8 @@ module.exports = {
 		alias: {
 			"@components": path.resolve(__dirname, "src/components/"),
 			"@styles": path.resolve(__dirname, "src/styles/"),
+			"@pages": path.resolve(__dirname, "src/pages/"),
+			"@images": path.resolve(__dirname, "src/assets/images/"),
 		},
 	},
 	module: {
@@ -41,11 +43,7 @@ module.exports = {
 			},
 			{
 				test: /\.(scss|css)$/,
-				use: [					
-					"style-loader",
-					"css-loader",
-					"sass-loader",
-				],
+				use: ["style-loader", "css-loader", "sass-loader"],
 			},
 			{
 				test: /\.(png|jpg|svg|gif)$/,
@@ -61,14 +59,14 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: "assets/[name].css",
 		}),
-		new CopyPlugin({
+		/* new CopyPlugin({
 			patterns: [
 				{
 					from: path.resolve(__dirname, "src", "assets/images"),
 					to: "assets/images",
 				},
 			],
-		}),
+		}), */
 		new CleanWebpackPlugin(),
 	],
 	devServer: {
